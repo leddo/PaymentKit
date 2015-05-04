@@ -233,7 +233,7 @@ static NSString *const kPTKOldLocalizedStringsTableName = @"STPaymentLocalizable
                          }];
     }
 
-    [self.cardNumberField becomeFirstResponder];
+
 }
 
 - (void)stateMeta
