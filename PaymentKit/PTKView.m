@@ -306,7 +306,9 @@ static NSString *const kPTKOldLocalizedStringsTableName = @"STPaymentLocalizable
     card.cvc = [self.cardCVC string];
     card.expMonth = [self.cardExpiry month];
     card.expYear = [self.cardExpiry year];
+    card.cardType = [self.cardNumber cardType];
 
+    
     return card;
 }
 

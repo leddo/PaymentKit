@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "PTKCardType.h"
 
 @interface PTKCard : NSObject
 
@@ -15,7 +16,9 @@
 @property (nonatomic, copy) NSString *addressZip;
 @property (nonatomic, assign) NSUInteger expMonth;
 @property (nonatomic, assign) NSUInteger expYear;
+@property (nonatomic, assign) PTKCardType cardType;
 
 @property (nonatomic, readonly) NSString *last4;
+@property (nonatomic, readonly) NSString *cardTypeName;
 
 @end

@@ -19,4 +19,34 @@
     }
 }
 
+
+- (NSString *)cardTypeName {
+    
+    NSString *cardTypeName = @"";
+    
+    switch (_cardType) {
+        case PTKCardTypeAmex:
+            cardTypeName = @"amex";
+            break;
+        case PTKCardTypeDinersClub:
+            cardTypeName = @"diners";
+            break;
+        case PTKCardTypeDiscover:
+            cardTypeName = @"discover";
+            break;
+        case PTKCardTypeJCB:
+            cardTypeName = @"jcb";
+            break;
+        case PTKCardTypeMasterCard:
+            cardTypeName = @"mastercard";
+            break;
+        case PTKCardTypeVisa:
+            cardTypeName = @"visa";
+            break;
+        default:
+            break;
+    }
+
+    return cardTypeName;
+}
 @end
