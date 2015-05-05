@@ -58,6 +58,8 @@
     NSLog(@"Card last4: %@", card.last4);
     NSLog(@"Card expiry: %lu/%lu", (unsigned long)card.expMonth, (unsigned long)card.expYear);
     NSLog(@"Card cvc: %@", card.cvc);
+    NSLog(@"Card type: %@", card.cardTypeName);
+    
     
     [[NSUserDefaults standardUserDefaults] setValue:card.last4 forKey:@"card.last4"];
     [self.navigationController popViewControllerAnimated:YES];
